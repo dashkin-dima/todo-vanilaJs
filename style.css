@@ -1,0 +1,119 @@
+* {   /* resetting all to zero */
+  margin: 0; 
+  padding: 0;
+  list-style: none;
+  outline: none;
+  font-family: 'Roboto', -apple-system, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.todo {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: calc(100vw - 30px);
+  height: calc(100vh - 100px);
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 2px 20px #f3f3f3;
+  border-radius: 10px;
+  border: 1px solid #f1f1f1;
+  font-size: 14px;
+}
+
+.todo__sidebar {
+	background-color: #f4f6f8;
+	width: 200px;
+	height: calc(100% - 120px);
+	border-right: 1px solid #f1f1f1;
+	padding: 60px 20px;
+}
+
+.todo__tasks {
+	flex: 1;
+	padding: 60px;
+	overflow: auto;
+}
+
+.button {
+  background: #4dd599;
+  border-radius: 4px;
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.field {
+  background: #ffffff;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 8px 12px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.field:focus {
+	border-color: #dbdbdb;
+}
+
+
+.todo__sidebar__lists {
+  margin-bottom: 30px;
+}
+
+.todo__sidebar__lists__list {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	padding: 10px 12px;
+	transition: background-color 0.15s ease-in-out;
+}
+
+.todo__sidebar__lists__active-list {
+	background: #ffffff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.04);
+	border-radius: 4px;
+}
+.todo__sidebar__lists__list:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+.todo__tasks__title {
+  display: inline-flex;
+  width: 100vh;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+.todo__tasks__title-delete {
+  margin: 8px;
+  cursor: pointer;
+  color: #ff7875;
+}
+.todo__tasks__title-delete:hover {
+  color: #f5222d;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  color: #8c8c8c;
+}
+button:hover {
+  color: #434343;
+} 
+.input-checkbox{
+  display: none;
+  height: 18px;
+  width: 18px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  
+}
+

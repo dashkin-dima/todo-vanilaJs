@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Todo list</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="scripts.js"></script>
+  </head>
+
+  <body>
+		<div class="todo"> 
+      <div class="todo__sidebar">
+        <h2 class="todo__sidebar__title">TODO</h2>
+        <ul class="todo__sidebar__lists" data-lists></ul>
+        <form action="" data-new-list-form>
+          <input 
+            type="text"
+            class="new list"
+            data-new-list-input
+            placeholder="new list name"
+            aria-label="new list name"
+          />
+          <button aria-label="create new list">Add</button>
+        </form>
+      </div>
+
+      <div class="todo__tasks" data-list-display-container>
+          <div class="todo__tasks__title">
+            <h2 class="todo__tasks__title-text" data-list-title></h2>
+            <div class="todo__tasks__title-delete" data-delete-list-button>Delete list</div>
+            <div class="todo__tasks__title-delete" data-clear-complete-tasks-button>Clear completed tasks</div>
+          </div>
+        <div class="todo__tasks__body">
+          <div class="todo__tasks__body__tasks" data-tasks></div>
+          <div class="todo__tasks__body__task-creator">
+              <form action="" data-new-task-form>
+                  <input 
+                    type="text"
+                    data-new-task-input
+                    placeholder="new task name"
+                    aria-label="new task name"
+                  />
+                  <button aria-label="create new task">Add</button>
+                </form>
+          </div>
+        </div>
+      </div>   
+    </div>
+    <template id="task-template">
+      <div class="task">
+        <input class="input-checkbox"type="checkbox" />
+        <label>
+          <span class="custom-checkbox"></span>
+        </label>
+      </div>
+		</template>
+	</div>
+  </body>
+</html>
